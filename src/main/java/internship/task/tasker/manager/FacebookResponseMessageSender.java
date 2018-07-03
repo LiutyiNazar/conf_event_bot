@@ -3,9 +3,9 @@ package internship.task.tasker.manager;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import internship.task.tasker.Interfaces.FacebookResponseMessageInterface;
-import internship.task.tasker.Interfaces.PlainMessageInterface;
-import internship.task.tasker.domain.Response;
+import internship.task.tasker.domain.plain.models.Response;
+import internship.task.tasker.interfaces.FacebookResponseMessageInterface;
+import internship.task.tasker.interfaces.PlainMessageInterface;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +29,7 @@ public class FacebookResponseMessageSender implements FacebookResponseMessageInt
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    @Override
     public void sendMessage(PlainMessageInterface plainMessage) {
         logger.info("Start sending message .....");
         doPost(plainMessage);
@@ -48,9 +49,11 @@ public class FacebookResponseMessageSender implements FacebookResponseMessageInt
         } catch (HttpClientErrorException ex) {
             logger.warn(ex.getStatusText());
             logger.warn(ex.getMessage());
+            throw new RuntimeException(ex);
         } catch (JsonProcessingException e) {
             logger.warn("Post", e);
             logger.warn(e.getMessage());
+            throw new RuntimeException(e);
         }
 
     }

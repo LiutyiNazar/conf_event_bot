@@ -1,11 +1,11 @@
 package internship.task.tasker.manager;
 
-import internship.task.tasker.Interfaces.DecisionMakingAnswerInterface;
-import internship.task.tasker.Interfaces.GenericInterface;
-import internship.task.tasker.Interfaces.ListTemplateInterface;
-import internship.task.tasker.Interfaces.ServiceCallbackInterface;
-import internship.task.tasker.domain.Generic.GenericPlainMessage;
-import internship.task.tasker.domain.WebHookRepresentationJSON;
+import internship.task.tasker.domain.generic.GenericPlainMessage;
+import internship.task.tasker.domain.plain.models.WebHookRepresentationJSON;
+import internship.task.tasker.interfaces.DecisionMakingAnswerInterface;
+import internship.task.tasker.interfaces.GenericInterface;
+import internship.task.tasker.interfaces.ListTemplateInterface;
+import internship.task.tasker.interfaces.ServiceCallbackInterface;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,10 +25,12 @@ public class DecisionMakingAnswerService implements DecisionMakingAnswerInterfac
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    @Override
     public void makeDecision(WebHookRepresentationJSON hook) {
 
         logger.info("Received message");
         hook.getEntry().forEach(entry -> entry.getMessaging().forEach(messaging -> {
+
             if (messaging.getMessage() != null) {
                 logger.info("Calling text executor");
                 executor.executeText(messaging);
@@ -44,6 +46,7 @@ public class DecisionMakingAnswerService implements DecisionMakingAnswerInterfac
 
     }
 
+    @Override
     public void sendGenericOrListTemplateSessions(GenericPlainMessage plainMessage, List<models.SessionModel> something) {
         logger.info("Size = " + something.size());
         if ((something.size() > 1)) {
@@ -57,6 +60,7 @@ public class DecisionMakingAnswerService implements DecisionMakingAnswerInterfac
         }
     }
 
+    @Override
     public void sendGenericOrListTemplateSpeakers(GenericPlainMessage plainMessage, List<models.SpeakerModel> something) {
         logger.info("Size = " + something.size());
         if ((something.size() > 1)) {

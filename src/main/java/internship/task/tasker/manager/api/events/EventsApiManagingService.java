@@ -1,7 +1,7 @@
 package internship.task.tasker.manager.api.events;
 
 
-import internship.task.tasker.Interfaces.EventsApiManagingInterface;
+import internship.task.tasker.interfaces.EventsApiManagingInterface;
 import models.ContextModel;
 import models.SessionModel;
 import models.SpeakerModel;
@@ -27,7 +27,7 @@ public class EventsApiManagingService implements EventsApiManagingInterface {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-
+    @Override
     public List<SpeakerModel> getSpeakers() {
         List<SpeakerModel> speakers = new ArrayList<>();
         logger.info("Trying to get message from localhost speakers");
@@ -44,6 +44,7 @@ public class EventsApiManagingService implements EventsApiManagingInterface {
         return speakers;
     }
 
+    @Override
     public List<SessionModel> getSessions() {
         List<SessionModel> sessions = new ArrayList<>();
         logger.info("Trying to get message from localhost sessions");
@@ -59,6 +60,7 @@ public class EventsApiManagingService implements EventsApiManagingInterface {
         return sessions;
     }
 
+    @Override
     public List<SessionModel> getSessionsBySpeakerId(int id) {
         List<SessionModel> sessions = new ArrayList<>();
         logger.info("Trying to get Sessions by Speaker Id");
@@ -75,6 +77,7 @@ public class EventsApiManagingService implements EventsApiManagingInterface {
 
     }
 
+    @Override
     public List<SpeakerModel> getSpeakersBySessionId(int id) {
         List<SpeakerModel> speakers = new ArrayList<>();
         logger.info("trying to get Speakers by Session Id");
@@ -90,6 +93,7 @@ public class EventsApiManagingService implements EventsApiManagingInterface {
         return speakers;
     }
 
+    @Override
     public List<ContextModel> getContext() {
         List<ContextModel> contextList = new ArrayList<>();
         logger.info("Trying to get all context ");
@@ -104,6 +108,7 @@ public class EventsApiManagingService implements EventsApiManagingInterface {
         return contextList;
     }
 
+    @Override
     public ContextModel getContextByRecipientId(String id) {
         logger.info("Trying to get context by recipient id");
         ContextModel contextModel = new ContextModel();
@@ -118,6 +123,7 @@ public class EventsApiManagingService implements EventsApiManagingInterface {
         return contextModel;
     }
 
+    @Override
     public Integer getLastSessionId() {
         Integer anser = null;
         try {
@@ -129,6 +135,7 @@ public class EventsApiManagingService implements EventsApiManagingInterface {
         return anser;
     }
 
+    @Override
     public Integer getLastSpeakerId() {
         Integer answer = null;
         try {

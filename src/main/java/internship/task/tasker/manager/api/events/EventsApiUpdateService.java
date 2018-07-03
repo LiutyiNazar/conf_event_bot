@@ -1,9 +1,9 @@
 package internship.task.tasker.manager.api.events;
 
-import internship.task.tasker.Interfaces.EventsApiUpdateInterface;
 import internship.task.tasker.domain.events.api.ContextUpdate;
 import internship.task.tasker.domain.events.api.SessionUpdate;
 import internship.task.tasker.domain.events.api.SpeakerUpdate;
+import internship.task.tasker.interfaces.EventsApiUpdateInterface;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +21,7 @@ public class EventsApiUpdateService implements EventsApiUpdateInterface {
 
     private RestTemplate restTemplate = new RestTemplate();
 
+    @Override
     public void doUpdateForSession(Integer id, String updateType, String value) {
         logger.info("Trying to do update for Session ");
         try {
@@ -35,6 +36,7 @@ public class EventsApiUpdateService implements EventsApiUpdateInterface {
         }
     }
 
+    @Override
     public void doUpdateForSpeaker(Integer id, String updateType, String value) {
         logger.info("Trying to do update for Speaker");
         try {
@@ -49,13 +51,13 @@ public class EventsApiUpdateService implements EventsApiUpdateInterface {
         }
     }
 
+    @Override
     public void doUpdateForContext(String id, String state) {
         try {
             ContextUpdate contextUpdate = new ContextUpdate();
             contextUpdate.setId(id);
             contextUpdate.setState(state);
             restTemplate.put(environment.getProperty("context_update"), contextUpdate);
-            //restTemplate.getForObject(environment.getProperty("update_context") + id + "&state=" + state, ContextModel.class);
         } catch (HttpClientErrorException ex) {
             logger.warn("UpdForContext", ex);
             logger.warn(ex.getMessage());

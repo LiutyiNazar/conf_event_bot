@@ -1,16 +1,16 @@
 package internship.task.tasker.manager;
 
-import internship.task.tasker.Interfaces.Button;
-import internship.task.tasker.Interfaces.Element;
-import internship.task.tasker.Interfaces.FacebookResponseMessageInterface;
-import internship.task.tasker.Interfaces.ListTemplateInterface;
-import internship.task.tasker.domain.ElementListImpl;
-import internship.task.tasker.domain.Generic.GenericAttachment;
-import internship.task.tasker.domain.Generic.GenericMessage;
-import internship.task.tasker.domain.Generic.GenericPlainMessage;
-import internship.task.tasker.domain.PayloadListImpl;
-import internship.task.tasker.domain.PostbackButton;
-import internship.task.tasker.domain.URLButtonView;
+import internship.task.tasker.domain.generic.GenericAttachment;
+import internship.task.tasker.domain.generic.GenericMessage;
+import internship.task.tasker.domain.generic.GenericPlainMessage;
+import internship.task.tasker.domain.plain.models.ElementListImpl;
+import internship.task.tasker.domain.plain.models.PayloadListImpl;
+import internship.task.tasker.domain.plain.models.PostbackButton;
+import internship.task.tasker.domain.plain.models.URLButtonView;
+import internship.task.tasker.interfaces.Button;
+import internship.task.tasker.interfaces.Element;
+import internship.task.tasker.interfaces.FacebookResponseMessageInterface;
+import internship.task.tasker.interfaces.ListTemplateInterface;
 import models.SessionModel;
 import models.SpeakerModel;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +27,9 @@ public class ListTemplateService implements ListTemplateInterface {
     private FacebookResponseMessageInterface sender;
     @Autowired
     private Environment environment;
+    private static final String IMAGE_URL = "imageUrl";
 
+    @Override
     public void createAndSendListOfSessions(GenericPlainMessage plainMessage, List<SessionModel> sessions) {
         List<Element> elements = new ArrayList<>();
 
@@ -56,6 +58,7 @@ public class ListTemplateService implements ListTemplateInterface {
 
     }
 
+    @Override
     public void createAndSendListOfSpeakers(GenericPlainMessage genericPlainMessage, List<SpeakerModel> speakers) {
         List<Element> elements = new ArrayList<>();
 
@@ -83,6 +86,7 @@ public class ListTemplateService implements ListTemplateInterface {
         sender.sendMessage(genericPlainMessage);
     }
 
+    @Override
     public void sendHelloTab(GenericPlainMessage plainMessage) {
         List<Element> elements = new ArrayList<>();
 
@@ -103,18 +107,18 @@ public class ListTemplateService implements ListTemplateInterface {
 
         ElementListImpl element1 = ElementListImpl.builder().buttons(buttons1).
                 title("Speakers").
-                imageUrl(environment.getProperty("imageUrl")).build();
+                imageUrl(environment.getProperty(IMAGE_URL)).build();
 
         ElementListImpl element2 = ElementListImpl.builder()
                 .title("Sessions").buttons(buttons2).
-                        imageUrl(environment.getProperty("imageUrl")).build();
+                        imageUrl(environment.getProperty(IMAGE_URL)).build();
 
         ElementListImpl element3 = ElementListImpl.builder().buttons(buttons3).title("Add new").
-                imageUrl(environment.getProperty("imageUrl")).build();
+                imageUrl(environment.getProperty(IMAGE_URL)).build();
 
 
         ElementListImpl element4 = ElementListImpl.builder().buttons(buttons4).title("JEE-CONF").
-                subtitle("conference").imageUrl(environment.getProperty("imageUrl")).build();
+                subtitle("conference").imageUrl(environment.getProperty(IMAGE_URL)).build();
 
         elements.add(element4);
         elements.add(element1);

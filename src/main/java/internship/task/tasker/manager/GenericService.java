@@ -1,15 +1,15 @@
 package internship.task.tasker.manager;
 
-import internship.task.tasker.Interfaces.Button;
-import internship.task.tasker.Interfaces.FacebookResponseMessageInterface;
-import internship.task.tasker.Interfaces.GenericInterface;
-import internship.task.tasker.domain.ElementPlainImpl;
-import internship.task.tasker.domain.Generic.GenericAttachment;
-import internship.task.tasker.domain.Generic.GenericMessage;
-import internship.task.tasker.domain.Generic.GenericPayload;
-import internship.task.tasker.domain.Generic.GenericPlainMessage;
-import internship.task.tasker.domain.PostbackButton;
-import internship.task.tasker.domain.Recipient;
+import internship.task.tasker.domain.generic.GenericAttachment;
+import internship.task.tasker.domain.generic.GenericMessage;
+import internship.task.tasker.domain.generic.GenericPayload;
+import internship.task.tasker.domain.generic.GenericPlainMessage;
+import internship.task.tasker.domain.plain.models.ElementPlainImpl;
+import internship.task.tasker.domain.plain.models.PostbackButton;
+import internship.task.tasker.domain.plain.models.Recipient;
+import internship.task.tasker.interfaces.Button;
+import internship.task.tasker.interfaces.FacebookResponseMessageInterface;
+import internship.task.tasker.interfaces.GenericInterface;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import models.SessionModel;
@@ -27,7 +27,9 @@ public class GenericService implements GenericInterface {
 
     @Autowired
     private FacebookResponseMessageInterface sender;
+    private static final String GENERIC = "generic";
 
+    @Override
     public void createAndSendGenericOfSessions(GenericPlainMessage plainMessage, List<SessionModel> sessions) {
 
         List<ElementPlainImpl> elements = new ArrayList<>();
@@ -45,7 +47,7 @@ public class GenericService implements GenericInterface {
             plainMessage.setMessage(
                     new GenericMessage().setAttachment(
                             new GenericAttachment().setPayload(
-                                    new GenericPayload().setTemplateType("generic").setElements(elements)
+                                    new GenericPayload().setTemplateType(GENERIC).setElements(elements)
                             )
                     )
             );
@@ -54,6 +56,7 @@ public class GenericService implements GenericInterface {
         sender.sendMessage(plainMessage);
     }
 
+    @Override
     public void createAndSendGenericOfSpeakers(GenericPlainMessage genericPlainMessage, List<SpeakerModel> speakers) {
 
         List<ElementPlainImpl> elements = new ArrayList<>();
@@ -76,18 +79,20 @@ public class GenericService implements GenericInterface {
         genericPlainMessage.setMessage(
                 new GenericMessage().setAttachment(
                         new GenericAttachment().setPayload(
-                                new GenericPayload().setTemplateType("generic").setElements(elements)
+                                new GenericPayload().setTemplateType(GENERIC).setElements(elements)
                         )
                 )
         );
         sender.sendMessage(genericPlainMessage);
     }
 
+    @Override
     public GenericPlainMessage defineRecipientForGenericPlainMessage(String recipientId) {
         GenericPlainMessage plainMessage1 = new GenericPlainMessage();
         return plainMessage1.setRecipient(Recipient.builder().ID(recipientId).build());
     }
 
+    @Override
     public void sendSpeakersGenericToChoose(String recipientId, List<SpeakerModel> speakers) {
         List<ElementPlainImpl> elements = new ArrayList<>();
         GenericPlainMessage genericPlainMessage = new GenericPlainMessage();
@@ -110,13 +115,14 @@ public class GenericService implements GenericInterface {
         genericPlainMessage.setMessage(
                 new GenericMessage().setAttachment(
                         new GenericAttachment().setPayload(
-                                new GenericPayload().setTemplateType("generic").setElements(elements)
+                                new GenericPayload().setTemplateType(GENERIC).setElements(elements)
                         )
                 )
         );
         sender.sendMessage(genericPlainMessage);
     }
 
+    @Override
     public void sendSessionsGenericToChoose(String recipientId, List<SessionModel> sessions) {
         List<ElementPlainImpl> elements = new ArrayList<>();
         GenericPlainMessage plainMessage = new GenericPlainMessage();
@@ -137,7 +143,7 @@ public class GenericService implements GenericInterface {
         plainMessage.setMessage(
                 new GenericMessage().setAttachment(
                         new GenericAttachment().setPayload(
-                                new GenericPayload().setTemplateType("generic").setElements(elements)
+                                new GenericPayload().setTemplateType(GENERIC).setElements(elements)
                         )
                 )
         );

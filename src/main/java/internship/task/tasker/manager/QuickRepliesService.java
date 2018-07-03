@@ -1,10 +1,10 @@
 package internship.task.tasker.manager;
 
-import internship.task.tasker.Interfaces.FacebookResponseMessageInterface;
-import internship.task.tasker.Interfaces.QuickRepliesInterface;
-import internship.task.tasker.domain.Message;
-import internship.task.tasker.domain.PlainMessage;
-import internship.task.tasker.domain.QuickReply;
+import internship.task.tasker.domain.plain.models.Message;
+import internship.task.tasker.domain.plain.models.PlainMessage;
+import internship.task.tasker.domain.plain.models.QuickReply;
+import internship.task.tasker.interfaces.FacebookResponseMessageInterface;
+import internship.task.tasker.interfaces.QuickRepliesInterface;
 import lombok.NoArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +26,7 @@ public class QuickRepliesService implements QuickRepliesInterface {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    @Override
     public void sendQuickReplyForAddNewTab(PlainMessage plainMessage) {
         logger.info("Received send quick replies for new tab command");
         QuickReply quickReply = QuickReply.builder().title("Add new Speaker").contentType("text").payload("AddNewSpeaker").build();

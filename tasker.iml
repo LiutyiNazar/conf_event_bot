@@ -4,6 +4,15 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <webroots />
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -11,6 +20,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -52,7 +62,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:json-smart:2.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:accessors-smart:1.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.ow2.asm:asm:5.0.4" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.assertj:assertj-core:3.9.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.mockito:mockito-core:2.15.0" level="project" />
@@ -70,49 +79,72 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.5" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.5" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
+    <orderEntry type="library" name="Maven: org.twdata.maven:mojo-executor:2.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-core:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-settings:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-settings-builder:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-repository-metadata:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-artifact:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-model-builder:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-aether-provider:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.aether:aether-spi:1.13.1" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.aether:aether-impl:1.13.1" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.aether:aether-api:1.13.1" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.aether:aether-util:1.13.1" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.sisu:sisu-inject-plexus:2.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.sisu:sisu-inject-bean:2.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.sisu:sisu-guice:no_aop:3.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.sisu:sisu-guava:0.9.9" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-interpolation:1.14" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-classworlds:2.4" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-component-annotations:1.5.5" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.plexus:plexus-sec-dispatcher:1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.plexus:plexus-cipher:1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-model:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-plugin-api:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-utils:2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:1.7.25" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.sonar:sonar-plugin-api:4.5.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.code.findbugs:jsr305:1.3.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.sonar:sonar-check-api:4.5.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.sonar:sonar-colorizer:4.5.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.sonar:sonar-channel:4.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.sonar:sonar-duplications:4.5.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.sonar:sonar-graph:4.5.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-lang:commons-lang:2.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.sonar:sonar-squid:4.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.picocontainer:picocontainer:2.14.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.hibernate:hibernate-annotations:3.4.0.GA" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.hibernate:ejb3-persistence:1.0.2.GA" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.hibernate:hibernate-commons-annotations:3.1.0.GA" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: dom4j:dom4j:1.6.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.guava:guava:10.0.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-configuration:commons-configuration:1.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-codec:commons-codec:1.11" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:jcl-over-slf4j:1.7.25" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:log4j-over-slf4j:1.7.25" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.thoughtworks.xstream:xstream:1.3.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: xpp3:xpp3:1.1.3.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.woodstox:woodstox-core-lgpl:4.4.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.woodstox:stax2-api:3.1.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.staxmate:staxmate:2.0.1" level="project" />
     <orderEntry type="module-library">
       <library name="Maven: com.botscrew.event_bot.event_models:Models:1.0-SNAPSHOT">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/Models-1.0-SNAPSHOT.jar!/" />
+          <root url="jar://$USER_HOME$/development/workspaces/tools/Models-1.0-SNAPSHOT.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.16.20" level="project" />
-    <orderEntry type="library" name="Maven: com.google.cloud:google-cloud-dialogflow:0.46.0-alpha" level="project" />
-    <orderEntry type="library" name="Maven: com.google.cloud:google-cloud-core:1.28.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:guava:20.0" level="project" />
-    <orderEntry type="library" name="Maven: joda-time:joda-time:2.9.9" level="project" />
-    <orderEntry type="library" name="Maven: com.google.http-client:google-http-client:1.23.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.5" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.9" level="project" />
-    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.11" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:3.0.1" level="project" />
-    <orderEntry type="library" name="Maven: com.google.api:api-common:1.5.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.api:gax:1.25.0" level="project" />
-    <orderEntry type="library" name="Maven: org.threeten:threetenbp:1.3.3" level="project" />
-    <orderEntry type="library" name="Maven: com.google.auth:google-auth-library-oauth2-http:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: com.google.http-client:google-http-client-jackson2:1.19.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java-util:3.5.1" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.2" level="project" />
-    <orderEntry type="library" name="Maven: com.google.api.grpc:proto-google-common-protos:1.10.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.api.grpc:proto-google-iam-v1:0.11.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.cloud:google-cloud-core-grpc:1.28.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.auth:google-auth-library-credentials:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.5.1" level="project" />
-    <orderEntry type="library" name="Maven: io.grpc:grpc-protobuf:1.10.1" level="project" />
-    <orderEntry type="library" name="Maven: io.grpc:grpc-protobuf-lite:1.10.1" level="project" />
-    <orderEntry type="library" name="Maven: io.grpc:grpc-context:1.10.1" level="project" />
-    <orderEntry type="library" name="Maven: com.google.api:gax-grpc:1.25.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.api.grpc:proto-google-cloud-dialogflow-v2beta1:0.11.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.api.grpc:proto-google-cloud-dialogflow-v2:0.11.0" level="project" />
-    <orderEntry type="library" name="Maven: io.grpc:grpc-netty-shaded:1.10.1" level="project" />
-    <orderEntry type="library" name="Maven: io.grpc:grpc-core:1.10.1" level="project" />
-    <orderEntry type="library" name="Maven: com.google.errorprone:error_prone_annotations:2.1.2" level="project" />
-    <orderEntry type="library" name="Maven: io.opencensus:opencensus-api:0.11.0" level="project" />
-    <orderEntry type="library" name="Maven: io.opencensus:opencensus-contrib-grpc-metrics:0.11.0" level="project" />
-    <orderEntry type="library" name="Maven: io.grpc:grpc-stub:1.10.1" level="project" />
-    <orderEntry type="library" name="Maven: io.grpc:grpc-auth:1.10.1" level="project" />
+  </component>
+  <component name="sonarModuleSettings">
+    <option name="localAnalysisScripName" value="&lt;PROJECT&gt;" />
+    <option name="serverName" value="&lt;PROJECT&gt;" />
   </component>
 </module>

@@ -1,9 +1,9 @@
 package internship.task.tasker.manager;
 
-import internship.task.tasker.Interfaces.AnswerInterface;
-import internship.task.tasker.Interfaces.FacebookResponseMessageInterface;
-import internship.task.tasker.domain.Message;
-import internship.task.tasker.domain.PlainMessage;
+import internship.task.tasker.domain.plain.models.Message;
+import internship.task.tasker.domain.plain.models.PlainMessage;
+import internship.task.tasker.interfaces.AnswerInterface;
+import internship.task.tasker.interfaces.FacebookResponseMessageInterface;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.slf4j.Logger;
@@ -24,7 +24,7 @@ public class Answerer implements AnswerInterface {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-
+    @Override
     public void sendText(PlainMessage plainMessage, String text) {
         logger.info("Sending text message .......");
         plainMessage.setMessage(Message.builder().text(text).build());

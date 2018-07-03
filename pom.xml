@@ -22,9 +22,12 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<sonar.sources>src/main</sonar.sources>
+		<sonar.tests>src/test</sonar.tests>
 	</properties>
 
 	<dependencies>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -48,14 +51,24 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>2.9.5</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.twdata.maven</groupId>
+			<artifactId>mojo-executor</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.sonar</groupId>
+			<artifactId>sonar-plugin-api</artifactId>
+			<version>4.5.7</version>
+			<scope>provided</scope>
+		</dependency>
 
 		<dependency>
 			<groupId>com.botscrew.event_bot.event_models</groupId>
 			<artifactId>Models</artifactId>
 			<version>1.0-SNAPSHOT</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}\src\main\resources\Models-1.0-SNAPSHOT.jar</systemPath>
+			<systemPath>/home/user/development/workspaces/tools/Models-1.0-SNAPSHOT.jar</systemPath>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 		<dependency>
@@ -68,12 +81,6 @@
 		<!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-dialogflow -->
 
 		<!-- https://mvnrepository.com/artifact/com.google.cloud/google-cloud-dialogflow -->
-		<dependency>
-			<groupId>com.google.cloud</groupId>
-			<artifactId>google-cloud-dialogflow</artifactId>
-			<version>0.46.0-alpha</version>
-		</dependency>
-
 
 
 
@@ -84,6 +91,36 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<!-- JaCoCo -->
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.7.9</version>
+				<configuration>
+					<excludes>
+						<exclude>com/tappter/Application.class</exclude>
+						<exclude>com/tappter/model/**/*.class</exclude>
+						<exclude>com/tappter/constants/*</exclude>
+						<exclude>com/tappter/properties/*</exclude>
+						<exclude>com/tappter/event/**/*Event.java</exclude>
+					</excludes>
+				</configuration>
+				<executions>
+					<execution>
+						<id>prepare-agent</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

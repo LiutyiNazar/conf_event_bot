@@ -1,9 +1,9 @@
 package internship.task.tasker.manager;
 
-import internship.task.tasker.Interfaces.Button;
-import internship.task.tasker.Interfaces.ButtonServiceInterface;
-import internship.task.tasker.Interfaces.FacebookResponseMessageInterface;
-import internship.task.tasker.domain.*;
+import internship.task.tasker.domain.plain.models.*;
+import internship.task.tasker.interfaces.Button;
+import internship.task.tasker.interfaces.ButtonServiceInterface;
+import internship.task.tasker.interfaces.FacebookResponseMessageInterface;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +24,11 @@ public class ButtonsService implements ButtonServiceInterface {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    private static final String TEMPLATE = "template";
+
+    private static final String BUTTON = "button";
+
+    @Override
     public void sendMakerTab(PlainMessage plainMessage) {
         //creating and sending URL buttons
 
@@ -38,9 +43,9 @@ public class ButtonsService implements ButtonServiceInterface {
 
         plainMessage.setMessage(
                 Message.builder().text(null).attachment(
-                        Attachment.builder().type("template").payload(
+                        Attachment.builder().type(TEMPLATE).payload(
                                 PayloadPlainImpl.builder().
-                                        templateType("button").text(
+                                        templateType(BUTTON).text(
                                         environment.getProperty("company_text")).
                                         buttons(buttonses).build()).
                                 build()
@@ -48,7 +53,7 @@ public class ButtonsService implements ButtonServiceInterface {
 
         sender.sendMessage(plainMessage);
     }
-
+    @Override
     public void doSendForHelloTab(PlainMessage plainMessage) {
 
         logger.info("Received Hello Tab command");
@@ -66,15 +71,15 @@ public class ButtonsService implements ButtonServiceInterface {
 
         plainMessage.setMessage(
                 Message.builder().text(null).attachment(
-                        Attachment.builder().type("template").payload(
-                                PayloadPlainImpl.builder().templateType("button").
+                        Attachment.builder().type(TEMPLATE).payload(
+                                PayloadPlainImpl.builder().templateType(BUTTON).
                                         text(environment.getProperty("HelloTabText")).buttons(buttonses).build()).
                                 build()
                 ).build());
 
         sender.sendMessage(plainMessage);
     }
-
+    @Override
     public void createNewSpeakerButton(PlainMessage plainMessage) {
 
         Button addNew = PostbackButton.builder().title("Create new and add").payload("AddSpeaker?id=0").build();
@@ -85,15 +90,15 @@ public class ButtonsService implements ButtonServiceInterface {
         buttons.add(skip);
         plainMessage.setMessage(
                 Message.builder().text(null).attachment(
-                        Attachment.builder().type("template").payload(
-                                PayloadPlainImpl.builder().templateType("button").
+                        Attachment.builder().type(TEMPLATE).payload(
+                                PayloadPlainImpl.builder().templateType(BUTTON).
                                         text("You also can add create new Speaker, and it will be added to your Session").buttons(buttons).build()).
                                 build()
                 ).build());
 
         sender.sendMessage(plainMessage);
     }
-
+    @Override
     public void createNewSessionButton(PlainMessage plainMessage) {
         Button addNew = PostbackButton.builder().title("Create new and add").payload("AddSession?id=0").build();
         Button skip = PostbackButton.builder().title("Skip").payload("AddSession?id=-1").build();
@@ -103,8 +108,8 @@ public class ButtonsService implements ButtonServiceInterface {
         buttons.add(skip);
         plainMessage.setMessage(
                 Message.builder().text(null).attachment(
-                        Attachment.builder().type("template").payload(
-                                PayloadPlainImpl.builder().templateType("button").
+                        Attachment.builder().type(TEMPLATE).payload(
+                                PayloadPlainImpl.builder().templateType(BUTTON).
                                         text("You also can create new Session, and it will be added to your Speaker\n Or, you are able to skip this step").buttons(buttons).build()).
                                 build()
                 ).build());

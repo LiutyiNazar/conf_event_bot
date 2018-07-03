@@ -1,6 +1,6 @@
 package internship.task.tasker.controller;
 
-import internship.task.tasker.domain.WebHookRepresentationJSON;
+import internship.task.tasker.domain.plain.models.WebHookRepresentationJSON;
 import internship.task.tasker.manager.DecisionMakingAnswerService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,7 +16,7 @@ public class WebHookVerificationController {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 
-    private final String verifyToken = "token";
+    private static final String VERIFY_TOKEN = "token";
 
     @GetMapping("/webhook")
     public String verify(@RequestParam("hub.mode") String mode,
@@ -26,8 +26,8 @@ public class WebHookVerificationController {
 
         logger.info("Received message from facebook ");
         logger.info(challenge);
-        if (mode.equals("subscribe")) {
-            if (verify.equals(this.verifyToken)) {
+        if ("subscribe".equals(mode)) {
+            if (verify.equals(VERIFY_TOKEN)) {
                 return challenge;
             }
 
@@ -35,7 +35,7 @@ public class WebHookVerificationController {
 
         return challenge;
     }
-
+    // what we  get from user
     @PostMapping("/webhook")
     public void receiveMessages(@RequestBody WebHookRepresentationJSON webHook) {
 
