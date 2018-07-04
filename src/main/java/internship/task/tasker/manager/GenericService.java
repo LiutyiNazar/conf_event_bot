@@ -27,7 +27,7 @@ public class GenericService implements GenericInterface {
 
     @Autowired
     private FacebookResponseMessageInterface sender;
-    private static final String GENERIC = "generic";
+    private final String generic = "generic";
 
     @Override
     public void createAndSendGenericOfSessions(GenericPlainMessage plainMessage, List<SessionModel> sessions) {
@@ -47,7 +47,7 @@ public class GenericService implements GenericInterface {
             plainMessage.setMessage(
                     new GenericMessage().setAttachment(
                             new GenericAttachment().setPayload(
-                                    new GenericPayload().setTemplateType(GENERIC).setElements(elements)
+                                    new GenericPayload().setTemplateType(generic).setElements(elements)
                             )
                     )
             );
@@ -79,7 +79,7 @@ public class GenericService implements GenericInterface {
         genericPlainMessage.setMessage(
                 new GenericMessage().setAttachment(
                         new GenericAttachment().setPayload(
-                                new GenericPayload().setTemplateType(GENERIC).setElements(elements)
+                                new GenericPayload().setTemplateType(generic).setElements(elements)
                         )
                 )
         );
@@ -115,7 +115,7 @@ public class GenericService implements GenericInterface {
         genericPlainMessage.setMessage(
                 new GenericMessage().setAttachment(
                         new GenericAttachment().setPayload(
-                                new GenericPayload().setTemplateType(GENERIC).setElements(elements)
+                                new GenericPayload().setTemplateType(generic).setElements(elements)
                         )
                 )
         );
@@ -143,7 +143,7 @@ public class GenericService implements GenericInterface {
         plainMessage.setMessage(
                 new GenericMessage().setAttachment(
                         new GenericAttachment().setPayload(
-                                new GenericPayload().setTemplateType(GENERIC).setElements(elements)
+                                new GenericPayload().setTemplateType(generic).setElements(elements)
                         )
                 )
         );

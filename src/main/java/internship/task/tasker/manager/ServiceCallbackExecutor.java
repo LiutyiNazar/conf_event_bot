@@ -1,6 +1,5 @@
 package internship.task.tasker.manager;
 
-import internship.task.tasker.domain.events.api.ContextState;
 import internship.task.tasker.domain.generic.GenericPlainMessage;
 import internship.task.tasker.domain.plain.models.Messaging;
 import internship.task.tasker.domain.plain.models.PlainMessage;
@@ -50,6 +49,8 @@ public class ServiceCallbackExecutor implements ServiceCallbackInterface {
     private ListTemplateInterface listTemplateService;
     @Autowired
     private ContexxtExecutorInterface contextExecutorService;
+    @Autowired
+    private ServiceCallbackCasesService  casesService;
 
 
 
@@ -57,42 +58,32 @@ public class ServiceCallbackExecutor implements ServiceCallbackInterface {
     public void executeText(Messaging messaging) {
 
         String answer = messaging.getMessage().getText();
-        log.info(answer);
         String recipientId = messaging.getSender().getId();
-
         ContextModel context = contextService.getContextByRecipientIdOrCreateIfNotExist(recipientId);
 
-        //creating message, which will contain answer
-        PlainMessage plainMessage = initTextMessage(recipientId, messaging);
+        casesService.initText(messaging);
 
-        //processing, what text we have, and answering to it
+
         if (answer == null) {
-            answerer.sendText(plainMessage, environment.getProperty("no_steackers"));
-            //if state is not Ended, so we will process adding new Entity
-        } else if (context.getContextState().equals("Ended")) {
+           casesService.noSteackers();
+
+        } else if ("Ended".equals(context.getContextState())) {
             switch (answer) {
 
                 case "Hello":
-                    answerer.sendText(plainMessage, environment.getProperty("hello_answer"));
+                    casesService.caseHello();
                     break;
-
                 case "How are you?":
-                    answerer.sendText(plainMessage, environment.getProperty("how_are_you"));
+                    casesService.howAre();
                     break;
-
-                case "Add new Speaker": {
-                    contextService.setContextOrCreate(recipientId, ContextState.SET_SPEAKER_FIRST_NAME);
-                    answerer.sendText(plainMessage, environment.getProperty("speaker_first_name"));
+                case "Add new Speaker":
+                   casesService.addNewSpeaker();
                     break;
-                }
-                case "Add new Session": {
-                    contextService.setContextOrCreate(recipientId, ContextState.SET_SESSION_NAME);
-                    answerer.sendText(plainMessage, environment.getProperty("name_input"));
+                case "Add new Session":
+                    casesService.addNewSession();
                     break;
-                }
                 default:
-                    answerer.sendText(plainMessage, environment.getProperty("incorect"));
-
+                    casesService.caseIncorrect();
 
             }
 
@@ -107,69 +98,49 @@ public class ServiceCallbackExecutor implements ServiceCallbackInterface {
     public void executePostback(Messaging messaging) {
 
         String recepientId = messaging.getSender().getId();
-        PlainMessage plainMessage = initPostback(recepientId);
         String postback = messaging.getPostback().getPayload();
         ContextModel context = contextService.getContextByRecipientIdOrCreateIfNotExist(recepientId);
 
-        if (context.getContextState().equals("Ended")) {
+        casesService.initPostback(messaging);
+
+        if ("Ended".equals(context.getContextState())) {
+
+
             switch (postback) {
-                case "Started!": {
-                    answerer.sendText(plainMessage, environment.getProperty("started"));
+                case "Started!":
+                    casesService.started();
                     break;
-                }
-                case "PostbackStarted": {
-                    GenericPlainMessage genericPlainMessage = genericService.defineRecipientForGenericPlainMessage(recepientId);
-                    listTemplateService.sendHelloTab(genericPlainMessage);
+                case "PostbackStarted":
+                    casesService.postbackStarted();
                     break;
-                }
-                case "PostbackSpeakers": {
-
-                    log.info("Received get speakers message");
-                    List<SpeakerModel> speakers = eventsApiManagingService.getSpeakers();
-                    GenericPlainMessage plainMessage1 = genericService.defineRecipientForGenericPlainMessage(recepientId);
-                    service.sendGenericOrListTemplateSpeakers(plainMessage1, speakers);
+                case "PostbackSpeakers":
+                    casesService.postbackSpeakers();
                     break;
-                }
-
-                case "PostbackSessions": {
-
-                    log.info("Received get sessions message");
-                    List<SessionModel> sessions = eventsApiManagingService.getSessions();
-                    GenericPlainMessage plainMessage1 = genericService.defineRecipientForGenericPlainMessage(recepientId);
-                    service.sendGenericOrListTemplateSessions(plainMessage1, sessions);
+                case "PostbackSessions":
+                casesService.postbackSessions();
                     break;
-                }
-                case "PostbackBotsCrew":
-                    buttonsService.sendMakerTab(plainMessage);
+                case "PostbackMaker":
+                    casesService.postbackMaker();
                     break;
-
-                case "PostbackAddNew": {
-
-                    log.info("Received add new tab command ");
-                    quickReplies.sendQuickReplyForAddNewTab(plainMessage);
+                case "PostbackAddNew":
+                    casesService.postbackAddNew();
                     break;
-                }
-                case "AddNewSpeaker": {
-
-                    contextService.setContextOrCreate(recepientId, ContextState.SET_SPEAKER_FIRST_NAME);
-                    answerer.sendText(plainMessage, environment.getProperty("speaker_first_name"));
+                case "AddNewSpeaker":
+                    casesService.addNewSpeaker();
                     break;
-                }
-                case "AddNewSession": {
-
-                    contextService.setContextOrCreate(recepientId, ContextState.SET_SESSION_NAME);
-                    answerer.sendText(plainMessage, environment.getProperty("name_input"));
+                case "AddNewSession":
+                    casesService.addNewSession();
                     break;
-                }
                 default:
-                    executeParamPostback(postback, plainMessage);
+                    casesService.caseDefault();
 
             }
+
         } else contextExecutorService.contextProcessing(messaging, context);
     }
 
 
-    private PlainMessage initPostback(String recipientId) {
+    public PlainMessage initPostback(String recipientId) {
         PlainMessage plainMessage = new PlainMessage();
         plainMessage.setRecipient(Recipient.builder().ID(recipientId).build());
         return plainMessage;
@@ -182,29 +153,26 @@ public class ServiceCallbackExecutor implements ServiceCallbackInterface {
                 .recipient(Recipient.builder().ID(recipientId).build()).build();
     }
 
-    private void executeParamPostback(String postback, PlainMessage plainMessage) {
+    public void executeParamPostback(String postback, PlainMessage plainMessage) {
         if (postback.length() > 14) {
 
             String number = postback.substring(15, postback.length());
             Integer num = Integer.parseInt(number);
             String text = postback.substring(0, 11);
 
-            switch (text) {
-                case "GetSessions": {
+             if("GetSessions".equals(text)){
                     List<SessionModel> sessions = eventsApiManagingService.getSessionsBySpeakerId(num);
                     GenericPlainMessage plainMessage1 = genericService.defineRecipientForGenericPlainMessage(plainMessage.getRecipient().getID());
                     service.sendGenericOrListTemplateSessions(plainMessage1, sessions);
-                    break;
                 }
-                case "GetSpeakers": {
+                if ("GetSpeakers".equals(text)){
                     List<SpeakerModel> speakers = eventsApiManagingService.getSpeakersBySessionId(num);
                     GenericPlainMessage plainMessage1 = genericService.defineRecipientForGenericPlainMessage(plainMessage.getRecipient().getID());
                     service.sendGenericOrListTemplateSpeakers(plainMessage1, speakers);
-                    break;
                 }
-            }
 
-        } else answerer.sendText(plainMessage, environment.getProperty("incorect"));
+
+        } else casesService.caseIncorrect();
     }
 
 

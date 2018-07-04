@@ -24,9 +24,9 @@ public class ButtonsService implements ButtonServiceInterface {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    private static final String TEMPLATE = "template";
+    private final String template = "template";
 
-    private static final String BUTTON = "button";
+    private  final String button = "button";
 
     @Override
     public void sendMakerTab(PlainMessage plainMessage) {
@@ -43,9 +43,9 @@ public class ButtonsService implements ButtonServiceInterface {
 
         plainMessage.setMessage(
                 Message.builder().text(null).attachment(
-                        Attachment.builder().type(TEMPLATE).payload(
+                        Attachment.builder().type("template").payload(
                                 PayloadPlainImpl.builder().
-                                        templateType(BUTTON).text(
+                                        templateType("button").text(
                                         environment.getProperty("company_text")).
                                         buttons(buttonses).build()).
                                 build()
@@ -71,8 +71,8 @@ public class ButtonsService implements ButtonServiceInterface {
 
         plainMessage.setMessage(
                 Message.builder().text(null).attachment(
-                        Attachment.builder().type(TEMPLATE).payload(
-                                PayloadPlainImpl.builder().templateType(BUTTON).
+                        Attachment.builder().type(template).payload(
+                                PayloadPlainImpl.builder().templateType(button).
                                         text(environment.getProperty("HelloTabText")).buttons(buttonses).build()).
                                 build()
                 ).build());
@@ -90,8 +90,8 @@ public class ButtonsService implements ButtonServiceInterface {
         buttons.add(skip);
         plainMessage.setMessage(
                 Message.builder().text(null).attachment(
-                        Attachment.builder().type(TEMPLATE).payload(
-                                PayloadPlainImpl.builder().templateType(BUTTON).
+                        Attachment.builder().type(template).payload(
+                                PayloadPlainImpl.builder().templateType(button).
                                         text("You also can add create new Speaker, and it will be added to your Session").buttons(buttons).build()).
                                 build()
                 ).build());
@@ -108,8 +108,8 @@ public class ButtonsService implements ButtonServiceInterface {
         buttons.add(skip);
         plainMessage.setMessage(
                 Message.builder().text(null).attachment(
-                        Attachment.builder().type(TEMPLATE).payload(
-                                PayloadPlainImpl.builder().templateType(BUTTON).
+                        Attachment.builder().type(template).payload(
+                                PayloadPlainImpl.builder().templateType(button).
                                         text("You also can create new Session, and it will be added to your Speaker\n Or, you are able to skip this step").buttons(buttons).build()).
                                 build()
                 ).build());

@@ -16,7 +16,7 @@ import lombok.*;
 @AllArgsConstructor
 public class PostbackButton implements Button{
     @JsonProperty("type")
-    private static final String TYPE = "postback";
+    private final String type = "postback";
     private String title ;
     private String payload;
 }

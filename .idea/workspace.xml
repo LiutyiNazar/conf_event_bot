@@ -2,169 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e98b5518-4368-41f4-a7d7-436f38321d6d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lombok.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PlainMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/URLButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextExecutorCasesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ServiceCallbackCasesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_api_common_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_gax_1_25_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_gax_grpc_1_25_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_grpc_proto_google_cloud_dialogflow_v2_0_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_grpc_proto_google_cloud_dialogflow_v2beta1_0_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_grpc_proto_google_common_protos_1_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_grpc_proto_google_iam_v1_0_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auth_google_auth_library_credentials_0_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auth_google_auth_library_oauth2_http_0_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_cloud_google_cloud_core_1_28_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_cloud_google_cloud_core_grpc_1_28_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_cloud_google_cloud_dialogflow_0_46_0_alpha.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_1_23_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_jackson2_1_19_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_util_3_5_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_auth_1_10_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_context_1_10_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_core_1_10_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_netty_shaded_1_10_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_protobuf_1_10_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_protobuf_lite_1_10_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_stub_1_10_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opencensus_opencensus_api_0_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opencensus_opencensus_contrib_grpc_metrics_0_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_threeten_threetenbp_1_3_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/spring-boot-logging.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/spring-boot-logging.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/spring-boot-logging.log.2018-06-12.0.gz" beforeDir="false" afterPath="$PROJECT_DIR$/logs/spring-boot-logging.log.2018-06-12.0.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylogfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/mylogfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/Interfaces/AnswerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/AnswerInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/Interfaces/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/Interfaces/ButtonServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/ButtonServiceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/Interfaces/ContextServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/ContextServiceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/Interfaces/ContexxtExecutorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/ContexxtExecutorInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/Interfaces/DecisionMakingAnswerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/DecisionMakingAnswerInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/Interfaces/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/Element.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/Interfaces/EventsApiManagingInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/EventsApiManagingInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/Interfaces/EventsApiUpdateInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/EventsApiUpdateInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/Interfaces/FacebookResponseMessageInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/FacebookResponseMessageInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/Interfaces/GenericInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/GenericInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/Interfaces/ListTemplateInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/ListTemplateInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/Interfaces/Payload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/Payload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/Interfaces/PlainMessageInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/PlainMessageInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/Interfaces/QuickRepliesInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/QuickRepliesInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/Interfaces/ServiceCallbackInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/ServiceCallbackInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/TaskerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/TaskerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/controller/WebHookVerificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/controller/WebHookVerificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/Attachment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Attachment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/DefaultAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/DefaultAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/ElementListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/ElementListImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/ElementPlainImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/ElementPlainImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Entry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/Generic/GenericAttachment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/generic/GenericAttachment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/Generic/GenericMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/generic/GenericMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/Generic/GenericPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/generic/GenericPayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/Generic/GenericPlainMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/generic/GenericPlainMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/Messaging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Messaging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/PayloadListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PayloadListImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/PayloadPlainImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PayloadPlainImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/PlainMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/Postback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Postback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/PostbackButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PostbackButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/QuickReply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/QuickReply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/Recipient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Recipient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/URLButton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/URLButtonView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/URLButtonView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/WebHookRepresentationJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/WebHookRepresentationJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/Answerer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/Answerer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/generic/GenericAttachment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/generic/GenericAttachment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PayloadListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PayloadListImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PostbackButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PostbackButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Recipient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Recipient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/URLButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/URLButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/URLButtonView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/URLButtonView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ButtonsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ButtonsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextExecutorCasesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextExecutorCasesService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextExecutorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextExecutorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/DecisionMakingAnswerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/DecisionMakingAnswerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/FacebookResponseMessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/FacebookResponseMessageSender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/GenericService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/GenericService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ListTemplateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ListTemplateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/QuickRepliesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/QuickRepliesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ServiceCallbackCasesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ServiceCallbackCasesService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ServiceCallbackExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ServiceCallbackExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/api/events/EventsApiManagingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/api/events/EventsApiManagingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/api/events/EventsApiUpdateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/api/events/EventsApiUpdateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Models-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/Interfaces/AnswerInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/Interfaces/Button.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/Interfaces/ButtonServiceInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/Interfaces/ContextServiceInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/Interfaces/ContexxtExecutorInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/Interfaces/DecisionMakingAnswerInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/Interfaces/Element.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/Interfaces/EventsApiManagingInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/Interfaces/EventsApiUpdateInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/Interfaces/FacebookResponseMessageInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/Interfaces/GenericInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/Interfaces/ListTemplateInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/Interfaces/Payload.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/Interfaces/PlainMessageInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/Interfaces/QuickRepliesInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/Interfaces/ServiceCallbackInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/text.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/text.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/TaskerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/internship/task/tasker/TaskerApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/controller/WebHookVerificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/internship/task/tasker/controller/WebHookVerificationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Answer$AnswerBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Answer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Attachment$AttachmentBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Attachment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/DefaultAction$DefaultActionBuilder.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/DefaultAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/ElementListImpl$ElementListImplBuilder.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/ElementListImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/ElementPlainImpl$ElementPlainImplBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/ElementPlainImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Entry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Generic/GenericAttachment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Generic/GenericMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Generic/GenericPayload.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Generic/GenericPlainMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Message$MessageBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Messaging$MessagingBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Messaging.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/PayloadListImpl$PayloadListImplBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/PayloadListImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/PayloadPlainImpl$PayloadPlainImplBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/PayloadPlainImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/PlainMessage$PlainMessageBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/PlainMessage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Postback.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/PostbackButton$PostbackButtonBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/PostbackButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/QuickReply$QuickReplyBuilder.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/QuickReply.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Recipient$RecipientBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Recipient.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Response.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/Sender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/URLButton$URLButtonBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/URLButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/URLButtonView$URLButtonViewBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/URLButtonView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/WebHookRepresentationJSON.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/events/api/ContextState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/events/api/ContextState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/events/api/ContextUpdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/events/api/ContextUpdate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/events/api/SessionUpdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/events/api/SessionUpdate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/events/api/SpeakerUpdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/internship/task/tasker/domain/events/api/SpeakerUpdate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/manager/Answerer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/internship/task/tasker/manager/Answerer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/manager/ButtonsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/internship/task/tasker/manager/ButtonsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/manager/ContextExecutorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/internship/task/tasker/manager/ContextExecutorService.class" afterDir="false" />
@@ -177,7 +39,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/manager/ServiceCallbackExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/internship/task/tasker/manager/ServiceCallbackExecutor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/manager/api/events/EventsApiManagingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/internship/task/tasker/manager/api/events/EventsApiManagingService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/internship/task/tasker/manager/api/events/EventsApiUpdateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/internship/task/tasker/manager/api/events/EventsApiUpdateService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tasker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/text.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/text.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -189,29 +51,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ContextService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ListTemplateService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ListTemplateService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-270">
-              <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+            <state relative-caret-position="57">
+              <caret line="89" column="64" lean-forward="true" selection-start-line="89" selection-start-column="64" selection-end-line="89" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuickRepliesService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/QuickRepliesService.java">
+      <file leaf-file-name="ButtonsService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ButtonsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="330">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -219,8 +75,72 @@
       <file leaf-file-name="DecisionMakingAnswerService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/DecisionMakingAnswerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="65" column="36" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+            <state relative-caret-position="420">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContextExecutorService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextExecutorService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceCallbackCasesService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ServiceCallbackCasesService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1459">
+              <caret line="124" column="21" selection-start-line="124" selection-start-column="21" selection-end-line="124" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3817#3818#0" expanded="true" />
+                <element signature="e#3900#3901#0" expanded="true" />
+                <element signature="e#3938#3939#0" expanded="true" />
+                <element signature="e#3995#3996#0" expanded="true" />
+                <element signature="e#4035#4036#0" expanded="true" />
+                <element signature="e#4104#4105#0" expanded="true" />
+                <element signature="e#4136#4137#0" expanded="true" />
+                <element signature="e#4196#4197#0" expanded="true" />
+                <element signature="e#3947#3948#0" expanded="true" />
+                <element signature="e#4035#4036#0" expanded="true" />
+                <element signature="e#4070#4071#0" expanded="true" />
+                <element signature="e#4158#4159#0" expanded="true" />
+                <element signature="e#4189#4190#0" expanded="true" />
+                <element signature="e#4276#4277#0" expanded="true" />
+                <element signature="e#4310#4311#0" expanded="true" />
+                <element signature="e#4394#4395#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebHookVerificationController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/controller/WebHookVerificationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Answer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Answer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Answerer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/Answerer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -228,44 +148,8 @@
       <file leaf-file-name="ServiceCallbackExecutor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ServiceCallbackExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2490">
-              <caret line="184" column="37" selection-start-line="184" selection-start-column="37" selection-end-line="184" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventsApiUpdateService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/api/events/EventsApiUpdateService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventsApiManagingService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/api/events/EventsApiManagingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="137" column="13" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceCallbackCasesService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ServiceCallbackCasesService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FacebookResponseMessageSender.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/FacebookResponseMessageSender.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+            <state relative-caret-position="105">
+              <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -273,8 +157,8 @@
       <file leaf-file-name="GenericService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/GenericService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="124" column="13" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+            <state relative-caret-position="165">
+              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -297,36 +181,39 @@
         <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/PayloadListImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/events/api/SessionUpdate.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/text.properties" />
         <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/events/api/ContextUpdate.java" />
         <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/events/api/SpeakerUpdate.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/Generic/GenericAttachment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/generic/GenericAttachment.java" />
         <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain_models/PayloadListImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain_models/PlainMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain_models/URLButton.java" />
         <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/AnswerInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain_models/Recipient.java" />
-        <option value="$PROJECT_DIR$/sonar-project.properties" />
         <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/controller/WebHookVerificationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/Answerer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/DecisionMakingAnswerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/QuickRepliesService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/TaskerApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/api/events/EventsApiUpdateService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/api/events/EventsApiManagingService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/text.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PayloadListImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/generic/GenericAttachment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextExecutorCasesService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/FacebookResponseMessageSender.java" />
+        <option value="$PROJECT_DIR$/sonar-project.properties" />
         <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PostbackButton.java" />
         <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/URLButton.java" />
         <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/URLButtonView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/Answerer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/DecisionMakingAnswerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/GenericService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ListTemplateService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/QuickRepliesService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ServiceCallbackExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/TaskerApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Recipient.java" />
         <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ButtonsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextExecutorService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextExecutorCasesService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/FacebookResponseMessageSender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/api/events/EventsApiUpdateService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/api/events/EventsApiManagingService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/GenericService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ListTemplateService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ServiceCallbackCasesService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ServiceCallbackExecutor.java" />
       </list>
     </option>
   </component>
@@ -378,10 +265,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1920" />
-    <option name="width" value="960" />
-    <option name="height" value="1069" />
+    <option name="y" value="-2" />
+    <option name="width" value="1920" />
+    <option name="height" value="1082" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -389,8 +277,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -406,88 +295,8 @@
             <path>
               <item name="tasker" type="b2602c69:ProjectViewProjectNode" />
               <item name="conf_event_bot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tasker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conf_event_bot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tasker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conf_event_bot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tasker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conf_event_bot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tasker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tasker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conf_event_bot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tasker" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tasker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conf_event_bot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tasker" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tasker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conf_event_bot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tasker" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tasker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conf_event_bot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tasker" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tasker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conf_event_bot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tasker" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tasker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conf_event_bot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tasker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conf_event_bot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-logging.log.2018-05-04.0.gz" type="af1da7cb:PsiGZipFileNode" />
             </path>
             <path>
               <item name="tasker" type="b2602c69:ProjectViewProjectNode" />
@@ -497,7 +306,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -507,7 +315,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/smart-trader-core" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -732,6 +540,7 @@
       <workItem from="1530611141828" duration="217000" />
       <workItem from="1530611389392" duration="6440000" />
       <workItem from="1530620965217" duration="5594000" />
+      <workItem from="1530685066940" duration="14597000" />
     </task>
     <task id="LOCAL-00001" summary="New version of bot">
       <created>1530566296140</created>
@@ -744,10 +553,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28223000" />
+    <option name="totallyTimeSpent" value="42820000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="960" height="1069" extended-state="0" />
+    <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -769,14 +578,13 @@
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32991454" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.525641" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3877766" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32991454" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32876712" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4573304" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32876712" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22838847" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="SonarLint" order="10" weight="0.40990517" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32982087" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Properties" order="3" />
@@ -784,6 +592,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32982087" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
     </layout>
@@ -806,23 +615,23 @@
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="SonarLint" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32991454" />
       <window_info id="Nl-Palette" order="7" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.32977587" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32982087" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22038421" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="bottom" id="SonarQube" order="15" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="CDI" order="11" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32982087" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" id="Bean Validation" order="10" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
     </layout-to-restore>
@@ -850,197 +659,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PayloadPlainImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PlainMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Postback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/QuickReply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Sender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/WebHookRepresentationJSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/AnswerInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/Button.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/ButtonServiceInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/ContextServiceInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/ContexxtExecutorInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/DecisionMakingAnswerInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/EventsApiManagingInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/Element.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/EventsApiUpdateInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/FacebookResponseMessageInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/GenericInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/ListTemplateInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/Payload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/PlainMessageInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/QuickRepliesInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/ServiceCallbackInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lombok.config">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/text.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Recipient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sonar-project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mylogfile.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1060,43 +678,217 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/spring-boot-logging.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="66" column="132" lean-forward="true" selection-start-line="66" selection-start-column="132" selection-end-line="66" selection-end-column="132" />
+        <state relative-caret-position="480">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/controller/WebHookVerificationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/ButtonServiceInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PostbackButton.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="450">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/URLButton.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/QuickRepliesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/events/api/ContextState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/events/api/SessionUpdate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/URLButtonView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/generic/GenericAttachment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        <state relative-caret-position="90">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/Answerer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/generic/GenericMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-111">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/generic/GenericPayload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/generic/GenericPlainMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Attachment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/DefaultAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/ElementListImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/ElementPlainImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Entry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PayloadListImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PayloadPlainImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PlainMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/QuickReply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Sender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/WebHookRepresentationJSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/api/events/EventsApiManagingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="892">
+          <caret line="137" column="13" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/interfaces/EventsApiUpdateInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/api/events/EventsApiUpdateService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="46" column="58" lean-forward="true" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/text.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <caret line="17" column="51" lean-forward="true" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Messaging.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextExecutorCasesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/FacebookResponseMessageSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>
@@ -1110,102 +902,140 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sonar-project.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="56" lean-forward="true" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/URLButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/URLButtonView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Postback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/PostbackButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Recipient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ButtonsService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="106" column="28" lean-forward="true" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextExecutorCasesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="116" column="56" selection-start-line="116" selection-start-column="56" selection-end-line="116" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8182#8183#0" expanded="true" />
-            <element signature="e#8266#8267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/GenericService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="124" column="13" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+        <state relative-caret-position="165">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ListTemplateService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+        <state relative-caret-position="57">
+          <caret line="89" column="64" lean-forward="true" selection-start-line="89" selection-start-column="64" selection-end-line="89" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/QuickRepliesService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextExecutorService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="435">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/FacebookResponseMessageSender.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/domain/plain/models/Answer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        <state relative-caret-position="90">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/Answerer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/DecisionMakingAnswerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="65" column="36" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+        <state relative-caret-position="420">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ContextService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/controller/WebHookVerificationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ServiceCallbackCasesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        <state relative-caret-position="405">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ServiceCallbackExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2490">
-          <caret line="184" column="37" selection-start-line="184" selection-start-column="37" selection-end-line="184" selection-end-column="37" />
+        <state relative-caret-position="105">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/api/events/EventsApiUpdateService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/ServiceCallbackCasesService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/api/events/EventsApiManagingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="137" column="13" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
+        <state relative-caret-position="1459">
+          <caret line="124" column="21" selection-start-line="124" selection-start-column="21" selection-end-line="124" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3817#3818#0" expanded="true" />
+            <element signature="e#3900#3901#0" expanded="true" />
+            <element signature="e#3938#3939#0" expanded="true" />
+            <element signature="e#3995#3996#0" expanded="true" />
+            <element signature="e#4035#4036#0" expanded="true" />
+            <element signature="e#4104#4105#0" expanded="true" />
+            <element signature="e#4136#4137#0" expanded="true" />
+            <element signature="e#4196#4197#0" expanded="true" />
+            <element signature="e#3947#3948#0" expanded="true" />
+            <element signature="e#4035#4036#0" expanded="true" />
+            <element signature="e#4070#4071#0" expanded="true" />
+            <element signature="e#4158#4159#0" expanded="true" />
+            <element signature="e#4189#4190#0" expanded="true" />
+            <element signature="e#4276#4277#0" expanded="true" />
+            <element signature="e#4310#4311#0" expanded="true" />
+            <element signature="e#4394#4395#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

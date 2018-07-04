@@ -49,11 +49,9 @@ public class FacebookResponseMessageSender implements FacebookResponseMessageInt
         } catch (HttpClientErrorException ex) {
             logger.warn(ex.getStatusText());
             logger.warn(ex.getMessage());
-            throw new RuntimeException(ex);
         } catch (JsonProcessingException e) {
             logger.warn("Post", e);
             logger.warn(e.getMessage());
-            throw new RuntimeException(e);
         }
 
     }

@@ -49,6 +49,7 @@ public class ContextExecutorCasesService {
     private PlainMessage plainMessage;
 
     public void init(Messaging messaging ){
+        this.messaging = messaging;
         recipientID = messaging.getSender().getId();
         sessionId = eventsApiManagingService.getLastSessionId();
        speakerId = eventsApiManagingService.getLastSpeakerId();

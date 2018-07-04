@@ -11,7 +11,7 @@ import lombok.Setter;
 @Builder
 public class URLButton implements Button{
     @JsonProperty("type")
-    private static final String TYPE = "web_url";
+    private final String type = "web_url";
     private String url;
     private String title;
 

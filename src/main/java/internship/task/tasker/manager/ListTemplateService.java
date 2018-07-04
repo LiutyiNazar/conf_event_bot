@@ -27,7 +27,7 @@ public class ListTemplateService implements ListTemplateInterface {
     private FacebookResponseMessageInterface sender;
     @Autowired
     private Environment environment;
-    private static final String IMAGE_URL = "imageUrl";
+    private final String imageUrl = "imageUrl";
 
     @Override
     public void createAndSendListOfSessions(GenericPlainMessage plainMessage, List<SessionModel> sessions) {
@@ -107,18 +107,18 @@ public class ListTemplateService implements ListTemplateInterface {
 
         ElementListImpl element1 = ElementListImpl.builder().buttons(buttons1).
                 title("Speakers").
-                imageUrl(environment.getProperty(IMAGE_URL)).build();
+                imageUrl(environment.getProperty(imageUrl)).build();
 
         ElementListImpl element2 = ElementListImpl.builder()
                 .title("Sessions").buttons(buttons2).
-                        imageUrl(environment.getProperty(IMAGE_URL)).build();
+                        imageUrl(environment.getProperty(imageUrl)).build();
 
         ElementListImpl element3 = ElementListImpl.builder().buttons(buttons3).title("Add new").
-                imageUrl(environment.getProperty(IMAGE_URL)).build();
+                imageUrl(environment.getProperty(imageUrl)).build();
 
 
         ElementListImpl element4 = ElementListImpl.builder().buttons(buttons4).title("JEE-CONF").
-                subtitle("conference").imageUrl(environment.getProperty(IMAGE_URL)).build();
+                subtitle("conference").imageUrl(environment.getProperty(imageUrl)).build();
 
         elements.add(element4);
         elements.add(element1);

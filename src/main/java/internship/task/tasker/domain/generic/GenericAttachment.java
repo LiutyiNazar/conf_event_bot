@@ -5,8 +5,8 @@ import internship.task.tasker.interfaces.Payload;
 
 
 public class GenericAttachment {
-    @JsonProperty("TYPE")
-    private static final String TYPE = "template";
+    @JsonProperty("type")
+    private final String TYPE = "template";
     private Payload payload;
 
     public String getType() {

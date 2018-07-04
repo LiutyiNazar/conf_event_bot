@@ -34,7 +34,6 @@ public class ContextExecutorService implements ContexxtExecutorInterface {
             case "SetSessionSpeaker":
                 casesService.setSessionSpeaker();
                 break;
-
             case "SetSpeakerFirstName":
                 casesService.setSpeakerFirstName();
                 break;

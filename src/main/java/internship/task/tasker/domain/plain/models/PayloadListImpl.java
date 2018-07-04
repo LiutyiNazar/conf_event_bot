@@ -14,7 +14,7 @@ import java.util.List;
 @Builder
 public class PayloadListImpl implements Payload {
     @JsonProperty("template_type")
-    private static final String TEMPLATE_TYPE = "list";
+    private final String templateType = "list";
     @JsonProperty("top_element_style")
     private String topElementStyle = "compact";
 
