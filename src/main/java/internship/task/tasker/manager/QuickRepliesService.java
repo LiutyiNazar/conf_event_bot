@@ -6,8 +6,7 @@ import internship.task.tasker.domain.plain.models.QuickReply;
 import internship.task.tasker.interfaces.FacebookResponseMessageInterface;
 import internship.task.tasker.interfaces.QuickRepliesInterface;
 import lombok.NoArgsConstructor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
@@ -17,6 +16,7 @@ import java.util.List;
 
 @NoArgsConstructor
 @Component
+@Slf4j
 public class QuickRepliesService implements QuickRepliesInterface {
 
     @Autowired
@@ -24,11 +24,10 @@ public class QuickRepliesService implements QuickRepliesInterface {
     @Autowired
     private Environment environment;
 
-    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Override
     public void sendQuickReplyForAddNewTab(PlainMessage plainMessage) {
-        logger.info("Received send quick replies for new tab command");
+        LOGGER.info("Received send quick replies for new tab command");
         QuickReply quickReply = QuickReply.builder().title("Add new Speaker").contentType("text").payload("AddNewSpeaker").build();
         QuickReply quickReply1 = QuickReply.builder().title("Add new Session").contentType("text").payload("AddNewSession").build();
         List<QuickReply> quickReplies = new ArrayList<>();

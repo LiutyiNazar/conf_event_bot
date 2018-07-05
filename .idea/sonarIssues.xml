@@ -28,6 +28,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/lombok.config">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/internship/task/tasker/TaskerApplication.java">
           <value>
             <set />
@@ -178,6 +183,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/internship/task/tasker/manager/creators/GenericCreator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/resources/text.properties">
           <value>
             <set />
@@ -188,7 +198,82 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../conf_event_server/src/main/java/com/crayfish/event_service/event_server/controller/EventWebController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../conf_event_server/src/main/java/com/crayfish/event_service/event_server/entities/SessionsEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../conf_event_server/src/main/java/com/crayfish/event_service/event_server/entities/SpeakersEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../conf_event_server/src/main/java/com/crayfish/event_service/event_server/services/SessionService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../conf_event_server/src/main/java/com/crayfish/event_service/event_server/services/SpeakerService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../conf_event_server/src/main/java/com/crayfish/eventservice/event/server/controller/EventWebController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../conf_event_server/src/main/java/com/crayfish/eventservice/event/server/entities/ContextEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../conf_event_server/src/main/java/com/crayfish/eventservice/event/server/entities/SessionsEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../conf_event_server/src/main/java/com/crayfish/eventservice/event/server/entities/SpeakersEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../conf_event_server/src/main/java/com/crayfish/eventservice/event/server/intefaces/SessionServiceInterface.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../conf_event_server/src/main/java/com/crayfish/eventservice/event/server/services/ContextService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../conf_event_server/src/main/java/com/crayfish/eventservice/event/server/services/SessionService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../conf_event_server/src/main/java/com/crayfish/eventservice/event/server/services/SpeakerService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../conf_event_server/src/main/java/sonar-project.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../conf_event_server/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../conf_event_server/src/sonar-project.properties">
           <value>
             <set />
           </value>

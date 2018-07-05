@@ -9,7 +9,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.extern.slf4j.Slf4j;
 import models.ContextModel;
 import models.SessionModel;
 import models.SpeakerModel;
@@ -24,7 +23,6 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Component
-@Slf4j
 public class ServiceCallbackExecutor implements ServiceCallbackInterface {
 
     @Autowired
@@ -50,8 +48,7 @@ public class ServiceCallbackExecutor implements ServiceCallbackInterface {
     @Autowired
     private ContexxtExecutorInterface contextExecutorService;
     @Autowired
-    private ServiceCallbackCasesService  casesService;
-
+    private ServiceCallbackCasesService casesService;
 
 
     @Override
@@ -65,7 +62,7 @@ public class ServiceCallbackExecutor implements ServiceCallbackInterface {
 
 
         if (answer == null) {
-           casesService.noSteackers();
+            casesService.noSteackers();
 
         } else if ("Ended".equals(context.getContextState())) {
             switch (answer) {
@@ -77,7 +74,7 @@ public class ServiceCallbackExecutor implements ServiceCallbackInterface {
                     casesService.howAre();
                     break;
                 case "Add new Speaker":
-                   casesService.addNewSpeaker();
+                    casesService.addNewSpeaker();
                     break;
                 case "Add new Session":
                     casesService.addNewSession();
@@ -117,7 +114,7 @@ public class ServiceCallbackExecutor implements ServiceCallbackInterface {
                     casesService.postbackSpeakers();
                     break;
                 case "PostbackSessions":
-                casesService.postbackSessions();
+                    casesService.postbackSessions();
                     break;
                 case "PostbackMaker":
                     casesService.postbackMaker();
@@ -160,22 +157,20 @@ public class ServiceCallbackExecutor implements ServiceCallbackInterface {
             Integer num = Integer.parseInt(number);
             String text = postback.substring(0, 11);
 
-             if("GetSessions".equals(text)){
-                    List<SessionModel> sessions = eventsApiManagingService.getSessionsBySpeakerId(num);
-                    GenericPlainMessage plainMessage1 = genericService.defineRecipientForGenericPlainMessage(plainMessage.getRecipient().getID());
-                    service.sendGenericOrListTemplateSessions(plainMessage1, sessions);
-                }
-                if ("GetSpeakers".equals(text)){
-                    List<SpeakerModel> speakers = eventsApiManagingService.getSpeakersBySessionId(num);
-                    GenericPlainMessage plainMessage1 = genericService.defineRecipientForGenericPlainMessage(plainMessage.getRecipient().getID());
-                    service.sendGenericOrListTemplateSpeakers(plainMessage1, speakers);
-                }
+            if ("GetSessions".equals(text)) {
+                List<SessionModel> sessions = eventsApiManagingService.getSessionsBySpeakerId(num);
+                GenericPlainMessage plainMessage1 = genericService.defineRecipientForGenericPlainMessage(plainMessage.getRecipient().getID());
+                service.sendGenericOrListTemplateSessions(plainMessage1, sessions);
+            }
+            if ("GetSpeakers".equals(text)) {
+                List<SpeakerModel> speakers = eventsApiManagingService.getSpeakersBySessionId(num);
+                GenericPlainMessage plainMessage1 = genericService.defineRecipientForGenericPlainMessage(plainMessage.getRecipient().getID());
+                service.sendGenericOrListTemplateSpeakers(plainMessage1, speakers);
+            }
 
 
         } else casesService.caseIncorrect();
     }
-
-
 
 
 }

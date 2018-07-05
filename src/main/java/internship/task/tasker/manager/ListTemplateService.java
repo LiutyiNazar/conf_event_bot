@@ -34,17 +34,19 @@ public class ListTemplateService implements ListTemplateInterface {
         List<Element> elements = new ArrayList<>();
 
         for (SessionModel session : sessions) {
-            List<Button> buttons = new ArrayList<>();
-            PostbackButton button = new PostbackButton();
-            button.setTitle("Speakers");
-            button.setPayload("GetSpeakers?id=" + session.getId());
-            buttons.add(button);
-            ElementListImpl element = ElementListImpl.builder()
-                    .imageUrl(environment.getProperty("default_image"))
-                    .title(session.getName() + "  " + session.getTime())
-                    .subtitle(session.getDescription())
-                    .buttons(buttons).build();
-            elements.add(element);
+            if (session.getName() != null) {
+                List<Button> buttons = new ArrayList<>();
+                PostbackButton button = new PostbackButton();
+                button.setTitle("Speakers");
+                button.setPayload("GetSpeakers?id=" + session.getId());
+                buttons.add(button);
+                ElementListImpl element = ElementListImpl.builder()
+                        .imageUrl(environment.getProperty("default_image"))
+                        .title(session.getName() + "  " + session.getTime())
+                        .subtitle(session.getDescription())
+                        .buttons(buttons).build();
+                elements.add(element);
+            } else continue;
         }
 
         plainMessage.setMessage(
@@ -63,17 +65,19 @@ public class ListTemplateService implements ListTemplateInterface {
         List<Element> elements = new ArrayList<>();
 
         for (SpeakerModel speaker : speakers) {
-            List<Button> buttons = new ArrayList<>();
-            PostbackButton button = new PostbackButton();
-            button.setTitle("Sessions");
-            button.setPayload("GetSessions?id=" + speaker.getId());
-            buttons.add(button);
-            ElementListImpl element = ElementListImpl.builder()
-                    .imageUrl(speaker.getImageUrl())
-                    .title(speaker.getFirstName() + " " + speaker.getLastName())
-                    .subtitle(speaker.getDescription())
-                    .buttons(buttons).build();
-            elements.add(element);
+            if (speaker.getFirstName() != null) {
+                List<Button> buttons = new ArrayList<>();
+                PostbackButton button = new PostbackButton();
+                button.setTitle("Sessions");
+                button.setPayload("GetSessions?id=" + speaker.getId());
+                buttons.add(button);
+                ElementListImpl element = ElementListImpl.builder()
+                        .imageUrl(speaker.getImageUrl())
+                        .title(speaker.getFirstName() + " " + speaker.getLastName())
+                        .subtitle(speaker.getDescription())
+                        .buttons(buttons).build();
+                elements.add(element);
+            } else continue;
         }
 
         genericPlainMessage.setMessage(

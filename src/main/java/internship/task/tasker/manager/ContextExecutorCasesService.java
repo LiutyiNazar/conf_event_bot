@@ -5,6 +5,7 @@ import internship.task.tasker.domain.plain.models.Messaging;
 import internship.task.tasker.domain.plain.models.PlainMessage;
 import internship.task.tasker.interfaces.*;
 import lombok.*;
+import lombok.extern.slf4j.Slf4j;
 import models.ContextModel;
 import models.SessionModel;
 import models.SpeakerModel;
@@ -22,6 +23,7 @@ import java.util.regex.Pattern;
 @NoArgsConstructor
 @AllArgsConstructor
 @Service
+@Slf4j
 public class ContextExecutorCasesService {
     @Autowired
     private AnswerInterface answerer;
@@ -43,36 +45,37 @@ public class ContextExecutorCasesService {
     private Messaging messaging;
     private ContextModel contextModel;
     private String recipientID;
-    private  Integer sessionId;
+    private Integer sessionId;
     private Integer speakerId;
     private String value = "";
     private PlainMessage plainMessage;
 
-    public void init(Messaging messaging ){
+    public void init(Messaging messaging) {
         this.messaging = messaging;
         recipientID = messaging.getSender().getId();
         sessionId = eventsApiManagingService.getLastSessionId();
-       speakerId = eventsApiManagingService.getLastSpeakerId();
+        speakerId = eventsApiManagingService.getLastSpeakerId();
         if (messaging.getMessage() != null) {
 
             value = messaging.getMessage().getText();
+            LOGGER.info("Received " + value + " command");
         }
         plainMessage = serviceCallback.initTextMessage(recipientID, messaging);
     }
 
-    public void setSessionName(){
+    public void setSessionName() {
         updateService.doUpdateForSession(sessionId + 1, "name", value);
         contextService.setContextOrCreate(recipientID, ContextState.SET_SESSION_TIME);
         answerer.sendText(plainMessage, environment.getProperty("time_input"));
     }
 
-    public void setSessionTime(){
+    public void setSessionTime() {
         updateService.doUpdateForSession(sessionId, "time", value);
         contextService.setContextOrCreate(recipientID, ContextState.SET_SESSION_DESCRIPTION);
         answerer.sendText(plainMessage, environment.getProperty("session_descript"));
     }
 
-    public void setSessionDescription(){
+    public void setSessionDescription() {
         updateService.doUpdateForSession(sessionId, "description", value);
         contextService.setContextOrCreate(recipientID, ContextState.SET_SESSION_SPEAKERS);
         answerer.sendText(plainMessage, environment.getProperty("session_add_speaker"));
@@ -81,11 +84,11 @@ public class ContextExecutorCasesService {
         buttonsService.createNewSpeakerButton(plainMessage);
     }
 
-    public void setSessionSpeaker(){
+    public void setSessionSpeaker() {
         String request = messaging.getPostback().getPayload();
         String number = request.substring(14, request.length());
         if (Integer.parseInt(number) == 0) {
-            updateService.doUpdateForSpeaker(speakerId + 1, "id", number);
+            updateService.doUpdateForSpeaker(-1, "id", number);
             number = "" + eventsApiManagingService.getLastSpeakerId();
             updateService.doUpdateForSession(sessionId, "speakers", number);
             contextService.setContextOrCreate(recipientID, ContextState.SET_SPEAKER_FIRST_NAME_INSIDE);
@@ -100,19 +103,19 @@ public class ContextExecutorCasesService {
         }
     }
 
-    public void setSpeakerFirstName(){
-        updateService.doUpdateForSpeaker(speakerId + 1, "firstName", value);
+    public void setSpeakerFirstName() {
+        updateService.doUpdateForSpeaker(-1, "firstName", value);
         contextService.setContextOrCreate(recipientID, ContextState.SET_SPEAKER_LAST_NAME);
         answerer.sendText(plainMessage, environment.getProperty("speaker_last_name"));
     }
 
-    public void setSpeakerLastName(){
+    public void setSpeakerLastName() {
         updateService.doUpdateForSpeaker(speakerId, "lastName", value);
         contextService.setContextOrCreate(recipientID, ContextState.SET_SPEAKER_IMAGE_URL);
         answerer.sendText(plainMessage, environment.getProperty("speaker_image_url"));
     }
 
-    public void setSpeakerImageURL(){
+    public void setSpeakerImageURL() {
         if (value.length() < 9) {
             answerer.sendText(plainMessage, "This is not valid url address! Please, try more");
         } else if (!"http".equals(value.substring(0, 4))) {
@@ -124,7 +127,7 @@ public class ContextExecutorCasesService {
         }
     }
 
-    public void setSpeakerDescription(){
+    public void setSpeakerDescription() {
         updateService.doUpdateForSpeaker(speakerId, "description", value);
         contextService.setContextOrCreate(recipientID, ContextState.SET_SPEAKER_SESSIONS);
         answerer.sendText(plainMessage, environment.getProperty("speaker_add_session"));
@@ -133,7 +136,7 @@ public class ContextExecutorCasesService {
         buttonsService.createNewSessionButton(plainMessage);
     }
 
-    public void setSpeakerEmail(){
+    public void setSpeakerEmail() {
         Pattern pattern = Pattern.compile(Objects.requireNonNull(environment.getProperty("regex")));
         if (!pattern.matcher(value).matches()) {
             answerer.sendText(plainMessage, "This is not valid email address! Please, try more");
@@ -144,11 +147,11 @@ public class ContextExecutorCasesService {
         }
     }
 
-    public void setSpeakerSessions(){
+    public void setSpeakerSessions() {
         String request = messaging.getPostback().getPayload();
         String number = request.substring(14, request.length());
         if (Integer.parseInt(number) == 0) {
-            updateService.doUpdateForSession(sessionId + 1, "id", value);
+            updateService.doUpdateForSession(-1, "id", value);
             number = "" + eventsApiManagingService.getLastSessionId();
             updateService.doUpdateForSpeaker(speakerId, "sessions", number);
             contextService.setContextOrCreate(recipientID, ContextState.SET_SESSION_NAME_INSIDE);
@@ -163,23 +166,21 @@ public class ContextExecutorCasesService {
         }
     }
 
-    public void setSessionNameInside(){
+    public void setSessionNameInside() {
         updateService.doUpdateForSession(sessionId, "name", value);
         contextService.setContextOrCreate(recipientID, ContextState.SET_SESSION_TIME);
         answerer.sendText(plainMessage, environment.getProperty("time_input"));
     }
 
-    public void setSpeakerFirstNameInside(){
-        updateService.doUpdateForSpeaker(speakerId + 1, "firstName", value);
+    public void setSpeakerFirstNameInside() {
+        updateService.doUpdateForSpeaker(-1, "firstName", value);
         contextService.setContextOrCreate(recipientID, ContextState.SET_SPEAKER_LAST_NAME);
         answerer.sendText(plainMessage, environment.getProperty("speaker_last_name"));
     }
 
-    public void defaultCase(){
+    public void defaultCase() {
         answerer.sendText(plainMessage, environment.getProperty("incorect"));
     }
-
-
 
 
 }

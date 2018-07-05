@@ -35,15 +35,17 @@ public class GenericService implements GenericInterface {
         List<ElementPlainImpl> elements = new ArrayList<>();
 
         for (SessionModel session : sessions) {
-            Button button = PostbackButton.builder().title("Speakers")
-                    .payload("GetSpeakers?id=" + session.getId()).build();
-            List<Button> buttons = new ArrayList<>();
-            buttons.add(button);
-            ElementPlainImpl element = new ElementPlainImpl();
-            element.setTitle(session.getName() + " " + session.getTime());
-            element.setSubtitle(session.getDescription());
-            element.setButtons(buttons);
-            elements.add(element);
+            if (session.getName() != null) {
+                Button button = PostbackButton.builder().title("Speakers")
+                        .payload("GetSpeakers?id=" + session.getId()).build();
+                List<Button> buttons = new ArrayList<>();
+                buttons.add(button);
+                ElementPlainImpl element = new ElementPlainImpl();
+                element.setTitle(session.getName() + " " + session.getTime());
+                element.setSubtitle(session.getDescription());
+                element.setButtons(buttons);
+                elements.add(element);
+            } else continue;
             plainMessage.setMessage(
                     new GenericMessage().setAttachment(
                             new GenericAttachment().setPayload(
@@ -62,19 +64,20 @@ public class GenericService implements GenericInterface {
         List<ElementPlainImpl> elements = new ArrayList<>();
 
         for (SpeakerModel speaker : speakers) {
+            if (speaker.getFirstName() != null) {
+                Button button = PostbackButton.builder().title("Sessions")
+                        .payload("GetSessions?id=" + speaker.getId()).build();
 
-            Button button = PostbackButton.builder().title("Sessions")
-                    .payload("GetSessions?id=" + speaker.getId()).build();
+                List<Button> buttons = new ArrayList<>();
+                buttons.add(button);
 
-            List<Button> buttons = new ArrayList<>();
-            buttons.add(button);
-
-            ElementPlainImpl element = new ElementPlainImpl();
-            element.setTitle(speaker.getFirstName() + " " + speaker.getLastName());
-            element.setSubtitle(speaker.getDescription());
-            element.setImageUrl(speaker.getImageUrl());
-            element.setButtons(buttons);
-            elements.add(element);
+                ElementPlainImpl element = new ElementPlainImpl();
+                element.setTitle(speaker.getFirstName() + " " + speaker.getLastName());
+                element.setSubtitle(speaker.getDescription());
+                element.setImageUrl(speaker.getImageUrl());
+                element.setButtons(buttons);
+                elements.add(element);
+            }
         }
         genericPlainMessage.setMessage(
                 new GenericMessage().setAttachment(
@@ -83,6 +86,7 @@ public class GenericService implements GenericInterface {
                         )
                 )
         );
+
         sender.sendMessage(genericPlainMessage);
     }
 
@@ -98,19 +102,20 @@ public class GenericService implements GenericInterface {
         GenericPlainMessage genericPlainMessage = new GenericPlainMessage();
         genericPlainMessage.setRecipient(Recipient.builder().ID(recipientId).build());
         for (SpeakerModel speaker : speakers) {
+            if (speaker.getFirstName() != null) {
+                Button button = PostbackButton.builder().title("Add")
+                        .payload("AddSpeaker?id=" + speaker.getId()).build();
 
-            Button button = PostbackButton.builder().title("Add")
-                    .payload("AddSpeaker?id=" + speaker.getId()).build();
+                List<Button> buttons = new ArrayList<>();
+                buttons.add(button);
 
-            List<Button> buttons = new ArrayList<>();
-            buttons.add(button);
-
-            ElementPlainImpl element = new ElementPlainImpl();
-            element.setTitle(speaker.getFirstName() + " " + speaker.getLastName());
-            element.setSubtitle(speaker.getDescription());
-            element.setImageUrl(speaker.getImageUrl());
-            element.setButtons(buttons);
-            elements.add(element);
+                ElementPlainImpl element = new ElementPlainImpl();
+                element.setTitle(speaker.getFirstName() + " " + speaker.getLastName());
+                element.setSubtitle(speaker.getDescription());
+                element.setImageUrl(speaker.getImageUrl());
+                element.setButtons(buttons);
+                elements.add(element);
+            } else continue;
         }
         genericPlainMessage.setMessage(
                 new GenericMessage().setAttachment(
@@ -129,15 +134,17 @@ public class GenericService implements GenericInterface {
         plainMessage.setRecipient(Recipient.builder().ID(recipientId).build());
 
         for (SessionModel session : sessions) {
-            Button button = PostbackButton.builder().title("Add")
-                    .payload("AddSpeaker?id=" + session.getId()).build();
-            List<Button> buttons = new ArrayList<>();
-            buttons.add(button);
-            ElementPlainImpl element = new ElementPlainImpl();
-            element.setTitle(session.getName() + " " + session.getTime());
-            element.setSubtitle(session.getDescription());
-            element.setButtons(buttons);
-            elements.add(element);
+            if (session.getName() != null) {
+                Button button = PostbackButton.builder().title("Add")
+                        .payload("AddSpeaker?id=" + session.getId()).build();
+                List<Button> buttons = new ArrayList<>();
+                buttons.add(button);
+                ElementPlainImpl element = new ElementPlainImpl();
+                element.setTitle(session.getName() + " " + session.getTime());
+                element.setSubtitle(session.getDescription());
+                element.setButtons(buttons);
+                elements.add(element);
+            } else continue;
         }
 
         plainMessage.setMessage(

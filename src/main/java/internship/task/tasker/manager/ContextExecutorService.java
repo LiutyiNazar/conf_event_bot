@@ -21,10 +21,10 @@ public class ContextExecutorService implements ContexxtExecutorInterface {
 
         switch (check) {
             case "SetSessionName":
-               casesService.setSessionName();
+                casesService.setSessionName();
                 break;
             case "SetSessionTime":
-               casesService.setSessionTime();
+                casesService.setSessionTime();
                 break;
 
             case "SetSessionDescription":
@@ -59,7 +59,7 @@ public class ContextExecutorService implements ContexxtExecutorInterface {
                 break;
 
             case "SetSessionNameInside":
-               casesService.setSessionNameInside();
+                casesService.setSessionNameInside();
                 break;
 
             case "SetSpeakerFirstNameInside":

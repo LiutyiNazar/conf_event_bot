@@ -6,14 +6,14 @@ import internship.task.tasker.interfaces.DecisionMakingAnswerInterface;
 import internship.task.tasker.interfaces.GenericInterface;
 import internship.task.tasker.interfaces.ListTemplateInterface;
 import internship.task.tasker.interfaces.ServiceCallbackInterface;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Component
+@Slf4j
 public class DecisionMakingAnswerService implements DecisionMakingAnswerInterface {
 
     @Autowired
@@ -23,20 +23,18 @@ public class DecisionMakingAnswerService implements DecisionMakingAnswerInterfac
     @Autowired
     private GenericInterface genericService;
 
-    private final Logger logger = LoggerFactory.getLogger(this.getClass());
-
     @Override
     public void makeDecision(WebHookRepresentationJSON hook) {
 
-        logger.info("Received message");
+        LOGGER.info("Received message");
         hook.getEntry().forEach(entry -> entry.getMessaging().forEach(messaging -> {
 
             if (messaging.getMessage() != null) {
-                logger.info("Calling text executor");
+                LOGGER.info("Calling text executor");
                 executor.executeText(messaging);
 
             } else {
-                logger.info("Calling postback executor");
+                LOGGER.info("Calling postback executor");
                 executor.executePostback(messaging);
             }
 
@@ -48,7 +46,7 @@ public class DecisionMakingAnswerService implements DecisionMakingAnswerInterfac
 
     @Override
     public void sendGenericOrListTemplateSessions(GenericPlainMessage plainMessage, List<models.SessionModel> something) {
-        logger.info("Size = " + something.size());
+        LOGGER.info("Size = " + something.size());
         if ((something.size() > 1)) {
             if (something.size() < 4) {
                 listTemplateService.createAndSendListOfSessions(plainMessage, something);
@@ -62,10 +60,10 @@ public class DecisionMakingAnswerService implements DecisionMakingAnswerInterfac
 
     @Override
     public void sendGenericOrListTemplateSpeakers(GenericPlainMessage plainMessage, List<models.SpeakerModel> something) {
-        logger.info("Size = " + something.size());
+        LOGGER.info("Size = " + something.size());
         if ((something.size() > 1)) {
 
-            if (something.size() < 4) {
+            if (something.size() < 5) {
                 listTemplateService.createAndSendListOfSpeakers(plainMessage, something);
             } else {
                 genericService.createAndSendGenericOfSpeakers(plainMessage, something);

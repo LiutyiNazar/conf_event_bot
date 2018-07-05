@@ -4,8 +4,7 @@ import internship.task.tasker.domain.events.api.ContextUpdate;
 import internship.task.tasker.domain.events.api.SessionUpdate;
 import internship.task.tasker.domain.events.api.SpeakerUpdate;
 import internship.task.tasker.interfaces.EventsApiUpdateInterface;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
@@ -13,32 +12,31 @@ import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
 @Component
+@Slf4j
 public class EventsApiUpdateService implements EventsApiUpdateInterface {
     @Autowired
     private Environment environment;
-
-    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     private RestTemplate restTemplate = new RestTemplate();
 
     @Override
     public void doUpdateForSession(Integer id, String updateType, String value) {
-        logger.info("Trying to do update for Session ");
+        LOGGER.info("Trying to do update for Session ");
         try {
             SessionUpdate sessionUpdate = new SessionUpdate();
             sessionUpdate.setId(id);
             sessionUpdate.setUpdateType(updateType);
             sessionUpdate.setValue(value);
-            restTemplate.put(environment.getProperty("session_update"),sessionUpdate);
+            restTemplate.put(environment.getProperty("session_update"), sessionUpdate);
         } catch (HttpClientErrorException ex) {
-            logger.warn("UpdForSession", ex);
-            logger.warn(ex.getMessage());
+            LOGGER.warn("UpdForSession", ex);
+            LOGGER.warn(ex.getMessage());
         }
     }
 
     @Override
     public void doUpdateForSpeaker(Integer id, String updateType, String value) {
-        logger.info("Trying to do update for Speaker");
+        LOGGER.info("Trying to do update for Speaker");
         try {
             SpeakerUpdate speakerUpdate = new SpeakerUpdate();
             speakerUpdate.setId(id);
@@ -46,8 +44,8 @@ public class EventsApiUpdateService implements EventsApiUpdateInterface {
             speakerUpdate.setValue(value);
             restTemplate.put(environment.getProperty("speaker_update"), speakerUpdate);
         } catch (HttpClientErrorException ex) {
-            logger.warn("UpdForSpeaker", ex);
-            logger.warn(ex.getMessage());
+            LOGGER.warn("UpdForSpeaker", ex);
+            LOGGER.warn(ex.getMessage());
         }
     }
 
@@ -59,8 +57,8 @@ public class EventsApiUpdateService implements EventsApiUpdateInterface {
             contextUpdate.setState(state);
             restTemplate.put(environment.getProperty("context_update"), contextUpdate);
         } catch (HttpClientErrorException ex) {
-            logger.warn("UpdForContext", ex);
-            logger.warn(ex.getMessage());
+            LOGGER.warn("UpdForContext", ex);
+            LOGGER.warn(ex.getMessage());
         }
     }
 
